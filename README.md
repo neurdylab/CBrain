@@ -52,7 +52,7 @@ cd data_preprocessing/fmri_atlas
 python datasetname_fmri_fit_atlas_batch_64.py
 ```
 We use Matlab for converting the preprocessed EEG data into the .set format (data_preprocessing/eeg_filtering/datasetname_convertEEG_to_set_batch.m) and channel removal (data_preprocessing/eeg_filtering/datasetname_EEG_removechannels_batch.m). Required package: EEGLAB.
-Please refer to NeuroBOLT[<a href="#ref3">3</a>] for data preprocessing details.
+Please refer to NeuroBOLT[<a href="#ref3">3</a>] for data preprocessing details and [<a href="#ref4">4</a>] for vigilance ground truth extraction.
 
 ## Model Training and Testing
 Please modify main.py for the GPU index and the argument '--train_device' for CPU/GPU selection accordingly. 
@@ -136,3 +136,5 @@ Please reach out to chang.li@vanderbilt.edu.
 <a id="ref2"></a>[[2] Lu Y, Xu C, Wei X, et al. Open-vocabulary point-cloud object detection without 3d annotation[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023: 1190-1199.](https://openaccess.thecvf.com/content/CVPR2023/papers/Lu_Open-Vocabulary_Point-Cloud_Object_Detection_Without_3D_Annotation_CVPR_2023_paper.pdf)
 
 <a id="ref3"></a>[[3] Li Y, Lou A, Xu Z, et al. NeuroBOLT: Resting-state EEG-to-fMRI synthesis with multi-dimensional feature mapping[J]. Advances in neural information processing systems, 2024, 37: 23378-23405.](https://arxiv.org/abs/2410.05341)
+
+<a id="ref4"></a>[[4] Pourmotabbed H, Martin C G, Goodale S E, et al. Multimodal state-dependent connectivity analysis of arousal and autonomic centers in the brainstem and basal forebrain[J]. Imaging Neuroscience, 2025, 3: IMAG. a. 91.](https://direct.mit.edu/imag/article/doi/10.1162/IMAG.a.91/131628)
