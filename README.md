@@ -54,6 +54,8 @@ python datasetname_fmri_fit_atlas_batch_64.py
 We use Matlab for converting the preprocessed EEG data into the .set format (data_preprocessing/eeg_filtering/datasetname_convertEEG_to_set_batch.m) and channel removal (data_preprocessing/eeg_filtering/datasetname_EEG_removechannels_batch.m). Required package: EEGLAB.
 Please refer to NeuroBOLT[<a href="#ref3">3</a>] for data preprocessing details and [<a href="#ref4">4</a>] for vigilance ground truth extraction.
 
+**Note from Authors:** The testing set is served as internal validation set where we pick the checkpoint that performs the best and report the metrics, and we use this selected checkpoint on the unseen external validation dataset. This approached is also applied to baselines compared.
+
 ## Model Training and Testing
 Please modify main.py for the GPU index and the argument '--train_device' for CPU/GPU selection accordingly. 
 ```bash
